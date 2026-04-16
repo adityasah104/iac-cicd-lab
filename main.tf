@@ -39,7 +39,7 @@ resource "aws_s3_bucket" "lab" {
 resource "aws_s3_object" "hello" {
   bucket  = aws_s3_bucket.lab.id
   key     = "1.txt"
-  content = "Hello from Terraform pipeline - deployed by ${var.student_suffix}"
+  content = "Hello from Terraform pipeline - deployed by The ${var.student_suffix}"
 }
 
 output "bucket_name" {
