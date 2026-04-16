@@ -20,7 +20,7 @@ variable "region" {
 variable "student_suffix" {
   description = "Unique suffix for your resources"
   type        = string
-  default     = "Aditya-sah"
+  default     = "aditya-sah"
 }
 
 # Create the S3 bucket
